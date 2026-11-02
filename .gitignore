@@ -3,6 +3,7 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+!/Makefile
 !/crucible.toml
 !/crucible.lock
 !/requirements.txt
@@ -33,3 +34,5 @@
 **/WORKLOG.md
 **/*.bak
 **/*~
+
+!/scripts/demo_info.py
