@@ -1,0 +1,60 @@
+{
+  "measurement_date": "2026-10-27",
+  "scope": "Recorded local demonstration results; raw data and generated artifacts are excluded from the Git package and must be regenerated to rerun the engineering observer.",
+  "results": {
+    "digital_checks": 102898,
+    "periods_per_case": 80,
+    "pwm_clock_Hz": 1000000,
+    "pwm_period_s": 0.000256,
+    "R_ohm": 10000,
+    "C_F": 1e-07,
+    "tau_s": 0.001,
+    "bridge": "recorded feed-forward PWL; no live feedback",
+    "cases": [
+      {
+        "duty": 0,
+        "mean_V": 0.0,
+        "target_V": 0.0,
+        "ripple_peak_to_peak_V": 0.0,
+        "max_exact_solution_error_V": 0.0,
+        "samples": 40971
+      },
+      {
+        "duty": 64,
+        "mean_V": 0.4499999829865615,
+        "target_V": 0.45,
+        "ripple_peak_to_peak_V": 0.08631137299999997,
+        "max_exact_solution_error_V": 7.577704380645756e-08,
+        "samples": 43532
+      },
+      {
+        "duty": 128,
+        "mean_V": 0.8999999649496119,
+        "target_V": 0.9,
+        "ripple_peak_to_peak_V": 0.11504260399999999,
+        "max_exact_solution_error_V": 5.2169668030010996e-08,
+        "samples": 43532
+      },
+      {
+        "duty": 192,
+        "mean_V": 1.3499999457717853,
+        "target_V": 1.35,
+        "ripple_peak_to_peak_V": 0.08631151999999997,
+        "max_exact_solution_error_V": 7.96363930355426e-08,
+        "samples": 43532
+      },
+      {
+        "duty": 256,
+        "mean_V": 1.7999999256480428,
+        "target_V": 1.8,
+        "ripple_peak_to_peak_V": 3.800000001330517e-07,
+        "max_exact_solution_error_V": 1.8515316613232358e-08,
+        "samples": 40972
+      }
+    ],
+    "negative_controls": [
+      "Half-amplitude bridge rejected",
+      "Flat midscale analogue output rejected"
+    ]
+  }
+}

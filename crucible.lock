@@ -1,0 +1,30 @@
+{
+  "active_environment": "ams-pwm-rc",
+  "environments": [
+    {
+      "name": "ams-pwm-rc",
+      "stack": "default",
+      "tools": [
+        {
+          "artifact_id": "igny_linux-x64_iverilog_14.0.0.0.tar.gz",
+          "checksum": "sha256:ea8c88407f03105163c70d03bba56a68b527188c7cf9437aa009048e74182216",
+          "enabled": true,
+          "name": "iverilog",
+          "platform": "linux-x86_64",
+          "source": "artifact",
+          "version": "14.0.0"
+        },
+        {
+          "artifact_id": "igny_ubuntu_ngspice_46.0.tar.gz",
+          "checksum": "sha256:9e2d69356e98c4012b16c3ca1aefce623aab5c378e7c846beed906426ba992cd",
+          "enabled": true,
+          "name": "ngspice",
+          "platform": "linux-x86_64",
+          "source": "artifact",
+          "version": "46"
+        }
+      ]
+    }
+  ],
+  "schema_version": 1
+}

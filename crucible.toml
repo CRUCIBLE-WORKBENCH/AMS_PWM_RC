@@ -1,0 +1,10 @@
+[workspace]
+name = "ams-pwm-rc"
+id = "ams-pwm-rc-5c6146ea"
+environment = "ams-pwm-rc"
+environments = [ "ams-pwm-rc",]
+
+[workspace.metadata]
+managed = false
+created_at = "2026-10-27T09:30:42.446251+00:00"
+created_by = "crucible-core"
