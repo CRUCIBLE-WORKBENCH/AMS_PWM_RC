@@ -4,7 +4,7 @@ IGNY_ENV ?= ams-pwm-rc
 IGNY_SCRIPT = $(IGNY) run script --env $(IGNY_ENV)
 .DEFAULT_GOAL := help
 .NOTPARALLEL:
-.PHONY: help setup check sed build run smoke report preflight digital analogue
+.PHONY: help setup check sed build run smoke report preflight digital analogue clean
 
 help:
 	@echo "igny run --env $(IGNY_ENV) make run - execute the complete experiment and independent checks"
@@ -15,6 +15,7 @@ help:
 	@echo "igny run --env $(IGNY_ENV) make sed - normalise public shell inputs to LF"
 	@echo "igny run --env $(IGNY_ENV) make report - print generated result summaries"
 	@echo "igny run --env $(IGNY_ENV) make preflight - review public package paths, links and hashes"
+	@echo "igny run --env $(IGNY_ENV) make clean - remove generated build and results artifacts"
 
 setup:
 	$(IGNY_SCRIPT) scripts/demo_info.py -- setup
@@ -43,3 +44,6 @@ analogue:
 
 smoke:
 	$(IGNY_SCRIPT) scripts/demo_info.py -- verify
+
+clean:
+	rm -rf build results
